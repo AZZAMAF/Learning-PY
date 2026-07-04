@@ -23,8 +23,15 @@ DB_name = ["azzam","rafi","ken"]
 DB_pwd = [1222, 1223, 1444]
 
 user1 = DB_name[0]
-user2= DB_name[1],DB_pwd[1]
-user3= DB_name[2],DB_pwd [2]
+user2= DB_name[1]
+user3= DB_name[2]
+
+user1Pwd = DB_pwd[0]
+user2Pwd = DB_pwd[1]
+user3Pwd = DB_pwd[2] 
+
+
+usernameDB = DB_name[0],DB_name[1], DB_name[2]
 
 username = DB_name
 allUser = user1, user2, user3
@@ -33,10 +40,14 @@ allUser = user1, user2, user3
 userInputname = input("userName : ") # nama yang  kit input ex : azzam
 name = userInputname
 
-# userInputpwd = int(input("password : "))
-# pwd = userInputpwd
+userInputpwd = int(input("password : "))
+pwd = userInputpwd
 
-if name == user1:
+
+
+if name == user1 or user2 and pwd == user1Pwd :
     print("Loggin Succes")
 else:
     print("failed")
+
+# perbedaan antara input biasa dan int(input()) adalah ya untuk khusus angka kalau huruf bakal fungsinya ya untuk pwd biasanya
