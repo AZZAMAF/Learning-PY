@@ -4,7 +4,7 @@
     # Panggil fungsi tersebut dengan 3 nama teman yang berbeda.
 
 def Hello(nama):
-    print(f'hello ${nama}, apa kabar?')
+    print(f'hello {nama}, apa kabar?')
 
 Hello("azzam")
 Hello("ken")
@@ -24,3 +24,6 @@ def Tambah(a,b):
 finalScore = Tambah(10,12)
 
 print(finalScore)
+
+# print hanya menampilkan di dalam terminal untuk trobel shooting
+# return itu mengembalikan nilai dan bisa di simpan ke dalam variabel ex: finalScore

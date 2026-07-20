@@ -27,3 +27,10 @@ friendsContact  ={
 friendsContact["ken"] = 11111111
 print(friendsContact["ken"])
 
+# Jelaskan: Kalau kamu punya 1000 teman, 
+# apakah lebih enak pakai variabel terpisah (teman1, teman2, ..., teman1000) atau 
+# pakai satu List of Dictionaries? Kenapa?
+
+# jika memang ada 1000 ya menginan pakai list of dicttionaries lah
+# gak usah buat satu2 lagi tapi kalau pakai oop lebih enak kita tinggal buat parent terus kemudian
+# make the child so easy deh kalau pakai oop mah

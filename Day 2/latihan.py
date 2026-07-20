@@ -8,6 +8,7 @@ daftarTeman = [
     "ken","ihsan","faruf"
 ]
 
+
 print(daftarTeman)
 
 daftarTeman.append("kentaki")
@@ -28,3 +29,6 @@ friendsContact  ={
 }
 
 print(friendsContact["ken"])
+
+#List itu enak di pakai di data yang begitu2 saja contoh nya kumpulan dari nama atau pun suatu angka
+# Dictionary lebih fleksibel dan mudah di pakai serta gak ribet cocok kalau mau buat database yang kompleks

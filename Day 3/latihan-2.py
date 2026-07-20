@@ -32,3 +32,7 @@ def helloUser(nama="User"):
 
 helloDefault = helloUser()
 helloAzam = helloUser(nama="azzam")
+
+# kenapa kita harus membuat nilai default agar kita jelas dalam menuntukan nilai apa kedepanya
+# ini akan memudah kan kita dalam mendevelop function jadi kita gak usah nulis ulang lagi
+# kek bluprintnya lah isitilah nya gitu 

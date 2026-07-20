@@ -25,3 +25,34 @@ def stockChek(itemName):
 
 result = stockChek(inventroy)
 print(result)
+
+# ketika print berjalan maka akan run reslut kemudian run function mengambil data dari inventroy
+# kemudia ke for loop mengambil data dari inventroy
+# kemudian saya ocpy datanya dan buat logic ambil stock kemudian pengecekan stockChek
+# jika ada maka availabel jika tidak stok not found kemudian jalan kan return
+# untuk mengembalikan data terbaru
+
+inventory = [
+    {"item": "biskuit", "stok": 5},
+    {"item": "daging", "stok": 2}
+]
+
+def cek_stok(nama_item):
+    for barang in inventory:
+        # Kita cek apakah nama item di database sama dengan yang dicari
+        if barang["item"] == nama_item:
+            # Jika namanya ketemu, kita cek stoknya
+            if barang["stok"] > 0:
+                print(f"Stok {nama_item} tersedia: {barang['stok']} buah.")
+                return # Selesai karena sudah ketemu
+            else:
+                print(f"Stok {nama_item} habis.")
+                return 
+    
+    # Kalau loop selesai sampai habis tapi tidak ketemu
+    print("Item tidak ditemukan dalam database.")
+
+# Testing
+cek_stok("daging")
+cek_stok("biskuit")
+cek_stok("apel") # Item yang tidak ada

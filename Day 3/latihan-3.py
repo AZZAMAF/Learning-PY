@@ -25,8 +25,25 @@ print(feedPet("biskuit"))
 print(feedPet("meat"))
 
 
+
+# hungry_level = 50
+
+# def feed_pet(makanan):
+#     global hungry_level # Ini kunci supaya variabel di luar bisa diubah
+#     if makanan == "biskuit":
+#         hungry_level -= 10 # Sama dengan: hungry_level = hungry_level - 10
+#     elif makanan == "daging":
+#         hungry_level -= 30
+#     else:
+#         print("Makanan tidak dikenal")
+#         return
+#     print(f"Sisa level lapar: {hungry_level}")
+
+# feed_pet("biskuit") # Sekarang levelnya jadi 40 secara permanen
+
+
 # Problem 4.2: List Processing
-#     Buat list angka: [10, 25, 40, 55, 70].
+#     Buat list angka: [10, 25, 40, 55, 70].q
 #     Buat fungsi filter_lulus(daftar_angka) yang mengembalikan List baru berisi angka yang >= 40.
 #     Hint: Gunakan for loop untuk mengecek setiap angka di dalam list.
 
@@ -47,5 +64,15 @@ def passedFilter(listNumber):
                 
 
 print(passedFilter(listNumber))
-    
+
+# output berfungsi sebagai wada baru dari list number
         
+
+# def filter_lulus(daftar_angka):
+#     hasil = [] # Wadah kosong
+#     for x in daftar_angka:
+#         if x >= 40:
+#             hasil.append(x) # Masukkan ke wadah
+#     return hasil # Kembalikan hasil akhirnya SETELAH loop selesai
+
+# print(filter_lulus(listNumber))
