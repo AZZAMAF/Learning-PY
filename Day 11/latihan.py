@@ -72,20 +72,34 @@ print(klasifikasi_umur(peopel))
 def count_bill(shoping_total, member=False):
     discount = 10 / 100
     tax = 11 / 100
-    shipping_cost = 20.000
+    shipping_cost = 20000
     if member == True: 
-        shoping_total -= discount
-        shoping_total += tax
+        shoping_total -= (shoping_total *discount)
+        shoping_total += (shoping_total * tax)
         shoping_total += shipping_cost
         return shoping_total
     # shoping = shoping - discount
     else:
-        shoping_total += tax
+        shoping_total += (shoping_total * tax)
         shoping_total += shipping_cost
         return shoping_total
 
-print(count_bill(100.000, True))
+print(count_bill(100000, True))
+#def count_bill(shoping_total, member=False):
+#         # 1. Cek diskon member dulu
+#     if member == True: 
+#         shoping_total = shoping_total - (shoping_total * 0.10)
         
+#     # 2. Hitung pajak dari harga terakhir (setelah diskon atau harga normal)
+#     shoping_total = shoping_total + (shoping_total * 0.11)
+    
+#     # 3. Tambah ongkir tetap
+#     shoping_total = shoping_total + 20000
+    
+#     return shoping_total
+
+# print(count_bill(100000, True))
+# # Output: 109900.0 (Diskon 10rb -> 90rb + Pajak 11% (9.9rb) + Ongkir 20rb)
 
 # Soal 4: "The Unique Data Cleaner" (Set & List Dedup)
 # Soal:
@@ -124,9 +138,10 @@ def find_product(db_product, key_word):
         # sumpah ini soal yang paling susah
         # karena gua gak ngerti urutan nya aja sih ternyata gampang bet
         if key_word in name_product:
-               product.append(name_product)
+               product.append(data)
                
     return product
-
+# Padahal di soal diminta: "Masukkan dictionary produk tersebut ke dalam list hasil."
+# Artinya, yang harus di-append adalah seluruh datanya (data), bukan cuma name_product-nya, biar struktur aslinya (beserta ID-nya) gak ilang.
 test = find_product(katalog_produk, "gaming")               
 print(test)

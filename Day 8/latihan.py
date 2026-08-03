@@ -93,7 +93,7 @@ def cari_huruf_vokal(kata):
     hurufVokal= []
     
     for huruf in kata.lower():
-        if huruf in "aiueo":
+        if huruf in "aAiueo":
         # print(kata)
             hurufVokal.append(huruf)
         # gua tuh salah nya di appen(ini cok) harusnya gua isi huruf malah gua isi kata wkwkwk

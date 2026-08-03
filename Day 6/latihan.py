@@ -86,7 +86,7 @@ minute(12)
 # buat fungsi untuk mengambil angka yang lebih besar dari 5 saja.
 
 number = [1,5,10,20]
-def collectNumber(n):
+def collectNumber(angka):
     for angka in number:
         if angka >= 5:
             print(angka)

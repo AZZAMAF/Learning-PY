@@ -9,6 +9,8 @@
 def count_price_after_discount(real_price, discount_persentance):
     real_price = real_price - (real_price * (discount_persentance / 100)) 
     # i'm not understand what is this / 100 = apakah discount = 100 gitu ya
+    # intinya harus di ubah jadi per 100 kalau mau hitung persen di komputer
+    # Nggak, bro! Maksud / 100 itu karena diskon dalam soal ditulis pakai angka bulat biasa (misal 25 buat 25%). Nah, di dalam matematika komputer, kalau kita mau ngitung persen dari suatu angka, bentuk persen itu harus diubah dulu jadi desimal (pecahan dari 100).
     return real_price
 
 print(count_price_after_discount(20000, 25))

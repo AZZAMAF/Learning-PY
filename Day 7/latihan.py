@@ -15,6 +15,12 @@ print(result)
 # (Hint: looping, simpan angka terbesar sementara di satu variabel).
 
 listNumber1 = [10, 5, 20,2 ]
+# def cari_maksimum(list_angka):
+    # terbesar = list_angka[0] # Anggap yang pertama paling besar
+    # for n in list_angka:
+    #     if n > terbesar:
+    #         terbesar = n # Kalau ada yang lebih besar, ganti juaranya!
+    # return terbesar
 
 def findBignumber(list):
     for n in list:
@@ -31,7 +37,7 @@ listUnic = list(set(listNumber + listNumber1))
 
 print(listUnic)
 
-# Cek Palindrome: Buat 
+# 4. Cek Palindrome: Buat 
 # fungsi yang mengecek apakah sebuah kata dibaca sama dari depan maupun belakang (contoh: "katak").
 
 def palindrome(data):
@@ -45,7 +51,7 @@ def palindrome(data):
 
 palindrome('nenek')
 
-# Hitung Vokal: Hitung jumlah huruf vokal (a, i, u, e, o) dalam sebuah kata.
+# 5. Hitung Vokal: Hitung jumlah huruf vokal (a, i, u, e, o) dalam sebuah kata.
 # def vokal(letter):
 #     word= letter
 #     word.sort(key=lambda x:(x['a'],x['i'],x['u'],x['e'],x['o']))
@@ -63,7 +69,7 @@ print(vokal('akai'))
 # Hasil: 3 (karena ada 'a', 'a', 'i')
 # gua nyerah itu hasil ai
 
-# Dictionary Lookup: Diberikan data { "apel": 5000, "jeruk": 3000 }, buat fungsi untuk mengecek harga barang berdasarkan nama.
+# 6. Dictionary Lookup: Diberikan data { "apel": 5000, "jeruk": 3000 }, buat fungsi untuk mengecek harga barang berdasarkan nama.
 buah ={ "apel": 5000, "jeruk": 3000 }
 
 def checkBuah(data):
@@ -93,7 +99,7 @@ def checkBuahSimpel(data):
 #  ini AI
 checkBuahSimpel("apel")
 
-# Filter Genap ke List Baru: Mirip nomor 10 tadi, tapi simpan hasilnya ke list baru ([]) lalu return list tersebut.
+# 7.Filter Genap ke List Baru: Mirip nomor 10 tadi, tapi simpan hasilnya ke list baru ([]) lalu return list tersebut.
 number = [1,5,10,20]
 
 def filterGenap(angka):
