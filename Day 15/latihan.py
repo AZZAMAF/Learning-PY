@@ -44,7 +44,7 @@ class Employee:
 
 class PermanentEmployees(Employee):
     
-    def count_salary(self, monthly_salary):
+    def salary(self, monthly_salary):
         return monthly_salary
     
 class freelance(Employee):
@@ -56,8 +56,10 @@ class freelance(Employee):
 
 default_employee = Employee('ahmad',12345678)
 print(default_employee.salary())
+
 pe = PermanentEmployees('rokan',123456)
-print(pe.count_salary(100))
+print(pe.salary(100))
+
 fe = freelance('guntur', 1090828)
 print(fe.salary(1000,12))    
         
@@ -96,9 +98,25 @@ class ProductElectronic(Product):
     # tapi aing disini gak ngertinya emg harus di tulis ulang ya code2 gua aja gak
     # apa biar leetcode or clean code gitu
     def get_infor(self, info_tambahan):
+        # self.gurante = gurante
         # Panggil self.get_price() bukan self.__price
         return f"name: {self.name} | price : {self.get_price()} | gurante : {self.gurante}{info_tambahan}"
     
     
 leptop = ProductElectronic('asuss',12000000,2)
 print(leptop.get_infor(' thn garansinya'))    
+
+class ProductCloth(Product):
+    # default  method// defult  constractor jadi apapun yang kita masukan kedalam __init__ ini hanya default  value aja
+    def __init__(self, name, price=0,size=''):
+        super().__init__(name, price)
+        self.size = size
+        
+    def get_infor(self, ):
+        return f"{super().get_infor()} | size : {self.size}"
+            
+
+# super().get_infor()    how  to   return  with size ya // super().get_infor() 
+# anjay bisa
+clothe_adiras  =  ProductCloth('adiras',100000,size='L')
+print(clothe_adiras.get_infor())
